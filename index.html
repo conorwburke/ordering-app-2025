@@ -1,9 +1,33 @@
 <html>
     <head>
        <link rel="stylesheet" href="index.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
     </head>
-    <body>
-	<script src="index.js"></script>
+    <body class="smythe-regular">
+        <header class="hero">
+            <h1 class="hero-txt">Jimmy's Diner</h1>
+            <p class="hero-txt ">The best burgers and pizzas in town.</p>
+        </header>
+        <section class="menu" id="menu-section">
+        </section>
+        <section class="cart" id="cart-section">
+            <p class="menu-item-name center-txt">Your order</p>
+            <div id="order-items"></div>
+            <button class="green-btn" id="order-btn">Complete order</button>
+        </section>
+        <div class="payment-modal">
+            <p class="payment-header center-txt">Enter card details</p>
+            <form>
+                <input type="text" required placeholder="Enter your name">
+                <input type="number" required placeholder="Enter card number" minlength="15" maxlength="16">
+                <input type="number" required placeholder="Enter CVV" minlength="3" maxlength="4">
+            </form>
+            <button class="green-btn" id="payment-btn">Pay</button>
+        </div>
+	<script src="./index.js" type="module"></script>
     </body>
 </html>
 
