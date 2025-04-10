@@ -1,6 +1,7 @@
 body {
-    margin: 0 auto;
-    width: 600px;  
+    margin: 20px auto;
+    max-width: 600px; 
+    background-color: whitesmoke; 
 }
 
 p {
@@ -58,6 +59,10 @@ p {
     font-size: 28px;
 }
 
+.menu-item-price {
+    font-size: 20px;
+}
+
 .ingredients {
     color: #8B8B8B;
 }
@@ -73,8 +78,41 @@ p {
     margin-top: 20px;
 }
 
-.cart {
-    margin: 0 46px;
+.cart-section {
+    margin: 45px 46px 0px;
+    /* display: none; */
+}
+
+.order-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-item-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.order-total {
+    margin-top: 20px;
+    border-top: solid 2px #000000;
+    padding-top: 20px;
+}
+
+.remove-btn {
+    border: none;
+    background: #ffffff;
+    color: #BBBBBB;
+    font-size: 12;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .green-btn {
@@ -87,6 +125,7 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 16px;
+    margin-top: 46px;
 }
 
 .payment-modal {
