@@ -22,14 +22,15 @@
             </div>
             <button class="green-btn" id="order-btn">Complete order</button>
         </section>
-        <div class="payment-modal">
+        <section id="thank-you-section"></section>
+        <div class="payment-modal display-none" id="payment-modal">
             <p class="payment-header center-txt">Enter card details</p>
             <form>
-                <input type="text" required placeholder="Enter your name">
-                <input type="number" required placeholder="Enter card number" minlength="15" maxlength="16">
-                <input type="number" required placeholder="Enter CVV" minlength="3" maxlength="4">
+                <input type="text" placeholder="Enter your name" required id="name-input">
+                <input type="number" placeholder="Enter card number" minlength="15" maxlength="16" required>
+                <input type="number" placeholder="Enter CVV" minlength="3" maxlength="4" required>
+                <input type="submit" class="green-btn" id="payment-btn" value="Pay">
             </form>
-            <button class="green-btn" id="payment-btn">Pay</button>
         </div>
 	<script src="./index.js" type="module"></script>
     </body>
