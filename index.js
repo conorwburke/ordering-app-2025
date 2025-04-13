@@ -30,7 +30,7 @@ function handleAddItemClick(itemId){
     const targetMenuObj = menuArray.filter(function(item){
         return item.id === itemId
     })[0]
-    itemHtml +=  `
+    itemHtml =  `
         <div class="order-item" data-price="${targetMenuObj.price}"> 
             <div class="order-item-btn">
                 <p class="menu-item-name">${targetMenuObj.name}</p>
@@ -38,7 +38,7 @@ function handleAddItemClick(itemId){
             </div>
             <p class="menu-item-price">$${targetMenuObj.price}</p>
         </div>`
-    orderItems.innerHTML = itemHtml
+    orderItems.innerHTML += itemHtml
     orderTotalPrice += targetMenuObj.price
     orderTotalTxt.textContent = '$' + orderTotalPrice
     cartSection.style.display = 'block'
