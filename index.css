@@ -1,7 +1,7 @@
 body {
     margin: 20px auto;
     max-width: 600px; 
-    background-color: #ffffff; 
+    background-color: #ffffff;
 }
 
 p {
@@ -141,7 +141,7 @@ p {
     border-radius: 4px;
     background: #ffffff;
     padding: 30px;
-    /* box-shadow: inset 0 0 10px 10px #cccccc;  */
+    box-shadow: 0 0 100px 50px lightgray; 
 }
 
 .payment-modal::backdrop {
