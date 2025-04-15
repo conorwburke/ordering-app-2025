@@ -26,9 +26,9 @@
         <div class="payment-modal display-none" id="payment-modal">
             <p class="payment-header center-txt">Enter card details</p>
             <form>
-                <input type="text" placeholder="Enter your name" required id="name-input">
-                <input type="number" placeholder="Enter card number" minlength="15" maxlength="16" required>
-                <input type="number" placeholder="Enter CVV" minlength="3" maxlength="4" required>
+                <input type="text" placeholder="Enter your name" required id="name-input" aria-label="name">
+                <input type="number" placeholder="Enter card number" minlength="15" maxlength="16" required aria-label="credit card number">
+                <input type="number" placeholder="Enter CVV" minlength="3" maxlength="4" required aria-label="cvv number">
                 <input type="submit" class="green-btn" id="payment-btn" value="Pay">
             </form>
         </div>
